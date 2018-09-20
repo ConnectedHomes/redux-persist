@@ -32,7 +32,11 @@ export default function getStoredState(
             `redux-persist/getStoredState: Error restoring data ${serialized}`,
             err
           )
-        throw err
+	if (config.initialState) {
+	  return config.initialState;
+        } else {
+          throw err;
+        }
       }
     }
   })
