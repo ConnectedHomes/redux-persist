@@ -1,6 +1,6 @@
 {
   "name": "@connected-home/redux-persist",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "persist and rehydrate redux stores",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -83,5 +83,7 @@
   "peerDependencies": {
     "redux": ">3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "immutable": "^3.8.2"
+  }
 }
